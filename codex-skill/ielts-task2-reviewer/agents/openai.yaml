@@ -1,0 +1,4 @@
+interface:
+  display_name: "IELTS Task 2 Reviewer"
+  short_description: "Evidence-based Task 2 practice feedback"
+  default_prompt: "Use $ielts-task2-reviewer to review my Task 2 essay and identify three priority improvements."
