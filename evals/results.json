@@ -1,0 +1,49 @@
+{
+  "product_version": "1.0.0",
+  "evaluation_date": "2026-07-29",
+  "runner": {
+    "name": "Codex CLI",
+    "version": "0.137.0",
+    "model_reported": "gpt-5.5",
+    "ephemeral": true,
+    "sandbox": "read-only"
+  },
+  "prompt_sha256": {
+    "english": "65dad45e3427a7011892bc0403a267d0a5a41bf17f1b06b406dd04236430cd60",
+    "chinese": "34f215d6117a822e42b1d543ef7868638340ef4731162591395e77dde796215e"
+  },
+  "input_isolation": {
+    "status": "pass",
+    "evaluation_target_sent_to_model": false
+  },
+  "automated_checks": {
+    "outputs": 20,
+    "heading_order_pass": 20,
+    "unexpected_heading_pass": 20,
+    "three_priorities_pass": 20,
+    "three_checkboxes_pass": 20,
+    "fixed_limitation_pass": 20,
+    "transparent_planned_system_note_pass": 20,
+    "evidence_line_count_pass": 20,
+    "exact_contiguous_evidence_pass": 20
+  },
+  "manual_checks": {
+    "primary_weakness_match": 18,
+    "unsupported_diagnosis_avoided": 20,
+    "no_full_rewrite": 20,
+    "english_primary_match": 9,
+    "chinese_primary_match": 9
+  },
+  "case_results": [
+    { "case": "01-off-topic", "english_primary_match": true, "chinese_primary_match": true },
+    { "case": "02-underdeveloped-ideas", "english_primary_match": true, "chinese_primary_match": true },
+    { "case": "03-weak-example", "english_primary_match": true, "chinese_primary_match": true },
+    { "case": "04-paragraph-logic", "english_primary_match": true, "chinese_primary_match": true },
+    { "case": "05-mechanical-cohesion", "english_primary_match": true, "chinese_primary_match": true },
+    { "case": "06-repetitive-vocabulary", "english_primary_match": true, "chinese_primary_match": true },
+    { "case": "07-collocation-errors", "english_primary_match": true, "chinese_primary_match": true },
+    { "case": "08-grammar-errors", "english_primary_match": true, "chinese_primary_match": true },
+    { "case": "09-simple-but-clear", "english_primary_match": true, "chinese_primary_match": true },
+    { "case": "10-near-target", "english_primary_match": false, "chinese_primary_match": false }
+  ]
+}

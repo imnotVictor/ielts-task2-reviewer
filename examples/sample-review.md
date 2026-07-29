@@ -28,8 +28,8 @@ These are AI-generated training reference scores, not official IELTS scores.
 ## Coherence and Cohesion
 
 - Training reference score: 6.0
-- Essay evidence: “First, free university education can make a country better.”
-- Why it matters: The essay has a clear paragraph structure and uses basic sequencing words. However, the logic inside paragraphs is sometimes too simple, so ideas move from one claim to another without enough explanation.
+- Essay evidence: “Educated people are useful, and every country needs useful people. If more students attend university, there will be more graduates.”
+- Why it matters: The essay has a clear paragraph structure, but this sequence moves from a broad claim to an expected result without explaining how university access produces the skills or economic value being claimed.
 - Concise action: In each body paragraph, use a clearer chain: main idea → explanation → example → result.
 
 ## Lexical Resource
@@ -42,8 +42,8 @@ These are AI-generated training reference scores, not official IELTS scores.
 ## Grammatical Range and Accuracy
 
 - Training reference score: 6.0
-- Essay evidence: “If more students attend university, there will be more graduates.”
-- Why it matters: Grammar is generally clear, and errors rarely block understanding. However, many sentences are short or simple, so the essay does not show much grammatical range.
+- Essay evidence: “Educated people are useful, and every country needs useful people.” / “These graduates can have jobs and help the economy.” / “They can study hard and get a degree.”
+- Why it matters: These separate examples are accurate and understandable, but they repeat direct subject–verb patterns. Across the essay, this limits the demonstrated range of clause structures.
 - Concise action: Combine some simple sentences using relative clauses, cause-effect clauses, and concession structures.
 
 ## Three Priority Problems
@@ -75,4 +75,4 @@ This review is AI-generated practice feedback. Its training reference scores may
 
 ## Optional Full-System Next Step
 
-This review identifies the three main problems in one essay. A complete review workflow can turn them into reusable error cards, targeted revision practice, and cross-essay progress tracking.
+This review identifies the three main problems in one essay. A separate full review system for error cards, targeted revision practice, and cross-essay progress tracking is planned but not yet available.

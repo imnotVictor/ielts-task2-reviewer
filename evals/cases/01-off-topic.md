@@ -13,15 +13,3 @@ The first reason is that office workers create a large part of the morning traff
 Another useful solution is changing school and office starting times. At present, parents, students and workers often leave home within the same thirty-minute period. Schools could begin earlier, while offices could offer flexible arrival times. This would spread travel across the morning instead of forcing everyone onto the transport system at once. In addition, online meetings can replace unnecessary business trips between different parts of a city.
 
 In conclusion, urban traffic cannot be solved simply by asking people to be more patient. Remote work, flexible schedules and online meetings can reduce the need to travel and make cities more comfortable. Governments should persuade employers to adopt these policies as soon as possible.
-
-## Evaluation target
-
-Primary weakness: The essay discusses reducing travel through remote work and scheduling, but it does not discuss the two required spending choices or give an opinion between them.
-
-Available evidence anchors:
-
-- “the most effective way to solve this issue is to encourage companies to let their staff work from home”
-- “Another useful solution is changing school and office starting times”
-- “Governments should persuade employers to adopt these policies”
-
-Unsupported diagnosis to avoid: The writer has no clear opinion.

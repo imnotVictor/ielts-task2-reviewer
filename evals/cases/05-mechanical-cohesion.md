@@ -15,15 +15,3 @@ Secondly, individuals are also important. Moreover, consumers decide what to buy
 Finally, individual action is not a replacement for regulation. Moreover, it can make government policies more successful. Furthermore, recycling systems only work when residents separate their waste correctly. In addition, clean transport investments have little effect if people refuse to use them.
 
 In conclusion, governments and companies have the greatest ability to reduce environmental harm. However, individuals are not powerless because their daily choices and political support can strengthen large-scale action.
-
-## Evaluation target
-
-Primary weakness: The argument is understandable, but repetitive sequencing words are used mechanically and sometimes repeat within the same paragraph.
-
-Available evidence anchors:
-
-- “Firstly, governments can create laws”
-- “Firstly, a national rule on vehicle emissions”
-- “Moreover, consumers decide what to buy. Furthermore, voters can support environmental policies.”
-
-Unsupported diagnosis to avoid: The essay contains no cohesive devices.

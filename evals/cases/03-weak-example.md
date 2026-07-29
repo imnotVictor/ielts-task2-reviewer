@@ -15,15 +15,3 @@ Advertising can also encourage unhealthy habits. Food companies often use cartoo
 However, a complete ban might be difficult to enforce online. A more practical policy would prohibit advertisements for products that can harm children and require clear labels on other commercial content.
 
 In conclusion, advertising aimed at children needs strict control because children are vulnerable consumers and unhealthy products can damage them. Targeted restrictions would be more realistic than allowing companies to advertise without limits.
-
-## Evaluation target
-
-Primary weakness: The main claims are relevant, but both examples focus on adult reactions and do not clearly demonstrate the claimed effect on children.
-
-Available evidence anchors:
-
-- “Many adults discussed the watch online”
-- “This shows that advertising is powerful and should not be shown to children.”
-- “This placement often makes adults add an extra snack to their basket.”
-
-Unsupported diagnosis to avoid: The essay argues for an absolute ban without acknowledging alternatives.

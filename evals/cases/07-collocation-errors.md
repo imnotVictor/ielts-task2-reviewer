@@ -15,15 +15,3 @@ There are also risks. Some students lose their study rhythm and find it difficul
 Another advantage is improved independence. Living away from home forces a young person to solve daily problems and carry responsibility for personal choices. This maturity can be valuable when the student later moves to a university residence and faces a demanding workload.
 
 In conclusion, a gap year can cause academic and financial difficulties, but careful planning can control these risks. The chance to gain experience, improve independence and choose a degree more wisely means that the advantages generally outweigh the disadvantages.
-
-## Evaluation target
-
-Primary weakness: The essay communicates a clear argument, but repeated unnatural word combinations reduce lexical accuracy.
-
-Available evidence anchors:
-
-- “collect practical experience”
-- “makes a job in a shop or office”
-- “take a better decision”
-
-Unsupported diagnosis to avoid: The writer misspells common words throughout the essay.

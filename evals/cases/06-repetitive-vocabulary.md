@@ -15,15 +15,3 @@ However, technology can make communication bad when people use it instead of mee
 In my view, the result depends on how people use technology. It is a good tool for keeping contact when people cannot meet, but it is a bad replacement for every face-to-face conversation. People should put their phones away during important time with family and friends.
 
 In conclusion, technology can make some communication less personal, but it also helps people maintain relationships over distance. People need to use it in a balanced way.
-
-## Evaluation target
-
-Primary weakness: Meaning is generally clear, but repeated general words limit precision and flexibility.
-
-Available evidence anchors:
-
-- “Technology is good because people can contact other people very quickly.”
-- “Technology is also good in emergencies”
-- “Online messages can also be bad because people cannot always understand feelings”
-
-Unsupported diagnosis to avoid: The essay uses informal texting abbreviations.

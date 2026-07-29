@@ -29,6 +29,11 @@ docs/scoring-disclaimer.md
 docs/full-version.md
 evals/evaluation-rubric.md
 evals/run-log.md
+evals/results.json
+scripts/run-prompt-evals.sh
+scripts/check-prompt-evals.mjs
+scripts/test-eval-input.sh
+scripts/test-eval-checker.sh
 "
 
 missing=0
@@ -50,6 +55,12 @@ if [ "$phase" = "full" ]; then
   case_count="$(find evals/cases -maxdepth 1 -type f -name '*.md' 2>/dev/null | wc -l | tr -d ' ')"
   if [ "$case_count" -ne 10 ]; then
     echo "Expected 10 evaluation cases, found $case_count" >&2
+    missing=1
+  fi
+
+  expected_count="$(find evals/expected -maxdepth 1 -type f -name '*.md' 2>/dev/null | wc -l | tr -d ' ')"
+  if [ "$expected_count" -ne 10 ]; then
+    echo "Expected 10 isolated evaluation targets, found $expected_count" >&2
     missing=1
   fi
 fi

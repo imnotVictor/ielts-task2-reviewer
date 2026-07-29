@@ -27,7 +27,7 @@ An entry point passes when:
 
 ## Case-specific checks
 
-Each case file supplies:
+Each raw file in `cases/` contains only the question and essay sent to the model. Its same-named file in `expected/` supplies:
 
 - one primary weakness the reviewer should identify;
 - three exact evidence anchors available to support feedback;

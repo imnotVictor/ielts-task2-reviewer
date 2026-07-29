@@ -104,9 +104,9 @@ The final English and Chinese Prompts were tested against ten original cases cov
 - simple but clear language;
 - a near-target essay.
 
-The final 20 Prompt outputs passed automated checks for structure, exact evidence, priority count, disclaimer, and rewrite boundaries. The Skill also passed fresh-context forward tests on three representative cases.
+The final 20 Prompt outputs were generated without access to the expected diagnoses. They passed automated checks for structure, exact evidence, priority count, disclaimer, and unexpected rewrite headings. Manual review matched the designated primary weakness in 9 of 10 cases for each language and found no full rewritten essay. The Skill also passed fresh-context forward tests on three representative cases.
 
-Review the [evaluation rubric](evals/evaluation-rubric.md), [Prompt run log](evals/run-log.md), and [Skill forward test](evals/skill-forward-test.md).
+Review the [evaluation rubric](evals/evaluation-rubric.md), [machine-readable results](evals/results.json), [Prompt run log](evals/run-log.md), and [Skill forward test](evals/skill-forward-test.md).
 
 ## Scoring basis and limitations
 

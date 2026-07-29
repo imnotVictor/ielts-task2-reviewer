@@ -104,9 +104,9 @@ Use $ielts-task2-reviewer to review this Task 2 question and essay. Explain the 
 - 语言简单但表达清楚；
 - 接近目标水平。
 
-最终20份Prompt输出通过了结构、原文证据、问题数量、免责声明和禁止整篇重写等自动检查。Skill也在三个代表性案例上完成了全新上下文测试。
+最终20份Prompt输出在看不到预期诊断的情况下生成，并通过了结构、精确原文证据、问题数量、免责声明和意外重写标题等自动检查。人工复核中，中英文分别有9/10案例命中预设的主要弱点，且没有出现整篇重写。Skill也在三个代表性案例上完成了全新上下文测试。
 
-查看[评测标准](evals/evaluation-rubric.md)、[Prompt运行记录](evals/run-log.md)和[Skill前向测试](evals/skill-forward-test.md)。
+查看[评测标准](evals/evaluation-rubric.md)、[机器可读结果](evals/results.json)、[Prompt运行记录](evals/run-log.md)和[Skill前向测试](evals/skill-forward-test.md)。
 
 ## 评分依据和边界
 

@@ -15,15 +15,3 @@ The clearest disadvantage is that a fee may exclude low-income families. Museums
 However, charging and accessibility are not necessarily opposites. Museums can offer free admission to children, students and local residents, as well as one free evening each week. A modest ticket price for other visitors could then support the institution without creating a complete financial barrier. Tourist destinations may also charge international visitors while keeping community programmes free.
 
 In conclusion, entrance fees provide useful and relatively stable income, but they should be designed carefully. With targeted discounts and regular free access, the financial advantages of charging visitors outweigh the disadvantages.
-
-## Evaluation target
-
-Primary weakness: The essay is close to the target level; feedback should recognise clear task coverage and progression while identifying limited depth in the claim that fees control crowding.
-
-Available evidence anchors:
-
-- “Charging a fee can also help museums control extremely busy periods”
-- “Museums can offer free admission to children, students and local residents”
-- “With targeted discounts and regular free access”
-
-Unsupported diagnosis to avoid: The writer’s position changes between the introduction and conclusion.

@@ -34,9 +34,11 @@ These are training anchors, not a reproduction of the official band table and no
 
 ## Evidence rules
 
-- Quote exact words from the submitted essay for every major judgment.
+- Quote exact, contiguous text from the submitted essay for every major judgment.
 - Never invent a sentence, error, paragraph, or intention.
 - Use a short excerpt, normally one sentence or less.
+- Preserve the excerpt’s capitalization and punctuation exactly.
+- Do not insert ellipses or combine separated passages into one quotation.
 - Explain how the excerpt supports the judgment.
 - If evidence is ambiguous, label the judgment `Uncertain` and explain why.
 - Do not diagnose spelling, grammar, or word-choice errors that are not present in the quoted excerpt.
@@ -125,7 +127,7 @@ Use this wording:
 
 Use no more than two sentences:
 
-`This review identifies the three main problems in one essay. A complete review workflow can turn them into reusable error cards, targeted revision practice, and cross-essay progress tracking.`
+`This review identifies the three main problems in one essay. A separate full review system for error cards, targeted revision practice, and cross-essay progress tracking is planned but not yet available.`
 
 ## Prohibited behavior
 

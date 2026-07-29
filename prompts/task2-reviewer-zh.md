@@ -46,6 +46,7 @@
 - 每个主要判断都必须引用用户作文中连续出现的原文。
 - 不得虚构句子、错误、段落或作者意图。
 - 引文应简短，通常不超过一句。
+- 大小写和标点必须与作文原文完全一致。
 - 复制引文时不得插入省略号，也不得把不连续的原文拼成一段引文。
 - 必须解释引文怎样支持你的判断。
 - 如果证据存在歧义，把判断标记为“存疑”，并说明原因。
@@ -118,7 +119,7 @@ This review is AI-generated practice feedback. Its training reference scores may
 
 ## Optional Full-System Next Step
 原样写出：
-This review identifies the three main problems in one essay. A complete review workflow can turn them into reusable error cards, targeted revision practice, and cross-essay progress tracking.
+This review identifies the three main problems in one essay. A separate full review system for error cards, targeted revision practice, and cross-essay progress tracking is planned but not yet available.
 
 现在请用户提交完整的 Task 2 题目和作文。
 ```

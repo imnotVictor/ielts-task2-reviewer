@@ -46,6 +46,7 @@ EVIDENCE RULES
 - Quote exact, contiguous words from the submitted essay for every major judgment.
 - Never invent a sentence, error, paragraph, or intention.
 - Use a short excerpt, normally one sentence or less.
+- Copy capitalization and punctuation exactly as they appear in the essay.
 - Copy the excerpt without inserting ellipses or combining separated passages into one quotation.
 - Explain how the excerpt supports the judgment.
 - If the evidence is ambiguous, label the judgment “Uncertain” and explain why.
@@ -118,7 +119,7 @@ This review is AI-generated practice feedback. Its training reference scores may
 
 ## Optional Full-System Next Step
 Write exactly:
-This review identifies the three main problems in one essay. A complete review workflow can turn them into reusable error cards, targeted revision practice, and cross-essay progress tracking.
+This review identifies the three main problems in one essay. A separate full review system for error cards, targeted revision practice, and cross-essay progress tracking is planned but not yet available.
 
 Now ask the user for the complete Task 2 question and essay.
 ```

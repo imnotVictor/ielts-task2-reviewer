@@ -15,15 +15,3 @@ Second, financial lessons could explain common risks. Young adults are often off
 Some people argue that parents should teach money skills. Parents are important, but not every family has the same knowledge or enough time. School lessons would give all students access to the same essential information. They would not need to replace mathematics or other subjects; a short practical course could be included in the final years of school.
 
 In conclusion, schools should teach budgeting, borrowing and financial safety. The language of finance can be complex, but the main habits are simple and useful for every student.
-
-## Evaluation target
-
-Primary weakness: Vocabulary and sentence patterns are relatively simple, but the response is clear, relevant, logically developed, and mostly accurate; the reviewer should not punish simplicity as if it were confusion.
-
-Available evidence anchors:
-
-- “This practical exercise would show them that buying one unnecessary item can reduce the amount available for an important bill.”
-- “Schools could use clear examples to show how a small debt grows when payments are missed.”
-- “a short practical course could be included in the final years of school”
-
-Unsupported diagnosis to avoid: The essay lacks relevant examples or explanations.

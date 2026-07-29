@@ -15,15 +15,3 @@ On the other hand, countryside areas is usually quieter and less polluted. Famil
 For myself, I would choose a city at the beginning of my career because it offer education, jobs and different experiences. Later in life, I might move to a small town near a city. This choice would giving me a quieter environment while keeping important services within reach.
 
 In conclusion, cities provide opportunity and convenience, whereas countryside offers space and peace. The best choice depend on a person’s age, work and priorities.
-
-## Evaluation target
-
-Primary weakness: Frequent agreement, verb-form, article, and auxiliary errors repeatedly interrupt otherwise relevant ideas.
-
-Available evidence anchors:
-
-- “There is many differences”
-- “A large city have hospitals”
-- “This choice would giving me a quieter environment”
-
-Unsupported diagnosis to avoid: The essay contains many comma splices joining independent sentences.

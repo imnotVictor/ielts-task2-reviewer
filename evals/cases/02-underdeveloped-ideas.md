@@ -15,15 +15,3 @@ Second, tuition fees create inequality. Rich students can attend good universiti
 Some people say that free university will cost the government too much. However, governments spend money on many things, and education is more important. They can simply move money from less important areas. Also, graduates will pay tax in the future, so the money will return.
 
 In conclusion, I strongly believe that university should be free. It improves the country, helps poor students and makes people happier. Governments must provide this opportunity to every person who wants a degree.
-
-## Evaluation target
-
-Primary weakness: The position is clear and relevant, but several ideas are asserted in general terms without explaining the mechanism, limits, or practical trade-offs.
-
-Available evidence anchors:
-
-- “Educated people are useful, and every country needs useful people.”
-- “This will make society equal, which is a good thing for everyone.”
-- “They can simply move money from less important areas.”
-
-Unsupported diagnosis to avoid: The essay fails to answer whether the writer agrees or disagrees.

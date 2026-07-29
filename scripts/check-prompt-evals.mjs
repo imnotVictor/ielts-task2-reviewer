@@ -3,7 +3,9 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const outputRoot = path.join(repoRoot, ".eval-output");
+const outputRoot = process.env.EVAL_OUTPUT_ROOT
+  ? path.resolve(process.env.EVAL_OUTPUT_ROOT)
+  : path.join(repoRoot, ".eval-output");
 const caseRoot = path.join(repoRoot, "evals", "cases");
 
 const requiredHeadings = [
@@ -22,19 +24,10 @@ const requiredHeadings = [
 const limitation =
   "This review is AI-generated practice feedback. Its training reference scores may vary and cannot replace an official IELTS result or qualified human assessment.";
 const productNote =
-  "This review identifies the three main problems in one essay. A complete review workflow can turn them into reusable error cards, targeted revision practice, and cross-essay progress tracking.";
+  "This review identifies the three main problems in one essay. A separate full review system for error cards, targeted revision practice, and cross-essay progress tracking is planned but not yet available.";
 
 function normalize(value) {
   return value.replace(/\s+/g, " ").trim();
-}
-
-function normalizeWords(value) {
-  return value
-    .normalize("NFKC")
-    .replace(/[^\p{L}\p{N}']+/gu, " ")
-    .replace(/\s+/g, " ")
-    .trim()
-    .toLowerCase();
 }
 
 function quotedEvidence(line) {
@@ -46,6 +39,13 @@ function quotedEvidence(line) {
     }
   }
   return values;
+}
+
+if (!fs.existsSync(outputRoot)) {
+  console.error(
+    `Evaluation outputs not found at ${outputRoot}. Run ./scripts/run-prompt-evals.sh first.`,
+  );
+  process.exit(1);
 }
 
 const outputFiles = fs
@@ -77,6 +77,13 @@ for (const outputName of outputFiles) {
       failures.push(`${outputName}: heading out of order ${heading}`);
     }
     previousIndex = index;
+  }
+
+  const allowedHeadings = new Set(requiredHeadings);
+  for (const match of output.matchAll(/^## .+$/gm)) {
+    if (!allowedHeadings.has(match[0])) {
+      failures.push(`${outputName}: unexpected heading ${match[0].slice(3)}`);
+    }
   }
 
   const problemCount = (output.match(/Problem:/g) ?? []).length;
@@ -119,7 +126,11 @@ for (const outputName of outputFiles) {
         failures.push(`${outputName}: quoted evidence contains an ellipsis: ${excerpt}`);
         continue;
       }
-      if (!normalizeWords(essayText).includes(normalizeWords(excerpt))) {
+      if (normalize(excerpt).length === 0) {
+        failures.push(`${outputName}: quoted evidence is empty`);
+        continue;
+      }
+      if (!essayText.includes(normalize(excerpt))) {
         failures.push(
           `${outputName}: quoted evidence is not exact essay text: ${excerpt}`,
         );
