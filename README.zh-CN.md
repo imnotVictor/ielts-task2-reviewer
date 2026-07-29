@@ -55,7 +55,7 @@ cp -R codex-skill/ielts-task2-reviewer "$HOME/.agents/skills/ielts-task2-reviewe
 Use $ielts-task2-reviewer to review this Task 2 question and essay. Explain the feedback in Chinese.
 ```
 
-项目级安装和故障处理请查看[完整快速入门](docs/quick-start.md)。
+项目级安装和故障处理请查看[完整快速入门](docs/quick-start.zh-CN.md)。
 
 ## 示例
 
@@ -112,7 +112,7 @@ Use $ielts-task2-reviewer to review this Task 2 question and essay. Explain the 
 
 批改结构参考当前公开的IELTS Writing四项标准说明。项目只使用原创表述，不复制商业教学资料或完整官方评分表。
 
-来源与限制记录在[评分依据与限制](docs/scoring-disclaimer.md)。
+来源与限制记录在[评分依据与限制](docs/scoring-disclaimer.zh-CN.md)。
 
 本项目与IELTS、British Council、IDP和Cambridge University Press & Assessment不存在隶属或官方背书关系。
 
@@ -120,7 +120,7 @@ Use $ielts-task2-reviewer to review this Task 2 question and essay. Explain the 
 
 免费版永久免费处理单篇作文诊断。未来的独立完整版计划增加审题、错题卡、针对性练习、跨作文错误追踪、每周复盘和Notion错题本。
 
-完整版仍在开发中。查看[透明功能对照](docs/full-version.md)。
+完整版仍在开发中。查看[透明功能对照](docs/full-version.zh-CN.md)。
 
 ## 使用条款
 

@@ -25,8 +25,11 @@ codex-skill/ielts-task2-reviewer/references/scoring-output-format.md
 examples/sample-essay.md
 examples/sample-review.md
 docs/quick-start.md
+docs/quick-start.zh-CN.md
 docs/scoring-disclaimer.md
+docs/scoring-disclaimer.zh-CN.md
 docs/full-version.md
+docs/full-version.zh-CN.md
 evals/evaluation-rubric.md
 evals/run-log.md
 evals/results.json
@@ -34,6 +37,7 @@ scripts/run-prompt-evals.sh
 scripts/check-prompt-evals.mjs
 scripts/test-eval-input.sh
 scripts/test-eval-checker.sh
+scripts/test-localized-doc-links.mjs
 "
 
 missing=0
@@ -115,6 +119,10 @@ fi
 
 if [ "$missing" -ne 0 ]; then
   exit 1
+fi
+
+if [ "$phase" = "full" ]; then
+  node scripts/test-localized-doc-links.mjs
 fi
 
 echo "Release validation passed for phase: $phase"
