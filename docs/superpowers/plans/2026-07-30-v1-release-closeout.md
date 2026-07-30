@@ -1,6 +1,6 @@
 # v1.0.0 发布收尾实施计划
 
-> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
+> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task by task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
 **Goal:** 将已经验证的 IELTS Task 2 Reviewer 整理为以 `main` 为默认分支、带有 `v1.0.0` Tag 和双语 GitHub Release 的正式公开版本。
 
