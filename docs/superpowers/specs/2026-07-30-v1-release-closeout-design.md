@@ -1,42 +1,42 @@
-# v1.0.0 Release Closeout Design
+# v1.0.0 发布收尾设计
 
-## Goal
+## 目标
 
-Turn the already validated IELTS Task 2 Reviewer repository into a conventional, clearly identifiable public `v1.0.0` release without changing the reviewer’s behavior or expanding the paid-product scope.
+在不改变批改器行为、也不扩展付费产品范围的前提下，把已经通过验证的 IELTS Task 2 Reviewer 仓库整理成规范、清晰可识别的公开 `v1.0.0` 版本。
 
-## Scope
+## 范围
 
-The release closeout will:
+本次发布收尾将：
 
-1. run the repository’s full release validation against the current commit;
-2. establish `main` at the validated commit and make it the GitHub default branch;
-3. preserve `feature/free-reviewer-v1` so existing links remain valid;
-4. create and push the `v1.0.0` tag;
-5. publish a GitHub Release with concise English and Chinese guidance;
-6. verify the public default branch, tag, Release page, README links, and clean-clone installation path.
+1. 对当前提交运行仓库的完整发布验证；
+2. 在通过验证的提交上建立 `main`，并将其设为 GitHub 默认分支；
+3. 保留 `feature/free-reviewer-v1`，确保现有链接继续有效；
+4. 创建并推送 `v1.0.0` Tag；
+5. 发布包含简明中英文说明的 GitHub Release；
+6. 验证公开默认分支、Tag、Release 页面、README 链接以及全新克隆后的安装流程。
 
-The release closeout will not change prompt behavior, evaluation expectations, licensing terms, or the planned full-version feature set.
+本次发布收尾不会改变 Prompt 行为、评测预期、许可条款或完整版的规划功能。
 
-## Release Content
+## Release 内容
 
-The GitHub Release will identify the following deliverables:
+GitHub Release 将明确列出以下交付内容：
 
-- reusable English and Chinese Task 2 reviewer prompts;
-- installable Codex Skill;
-- bilingual quick-start and scoring-boundary documentation;
-- original sample essay and review;
-- public evaluation cases, results, and validation scripts.
+- 可重复使用的中英文 Task 2 批改 Prompt；
+- 可安装的 Codex Skill；
+- 中英文快速入门及评分边界说明；
+- 原创示例作文和完整批改；
+- 公开的评测案例、结果和验证脚本。
 
-It will state that generated scores are training references rather than official IELTS scores and that the repository is licensed for personal, non-commercial use under `LICENSE.md`.
+Release 将说明：生成的分数属于训练参考分，并非官方 IELTS 成绩；仓库内容按照 `LICENSE.md` 仅授权个人非商业使用。
 
-## Branch and Tag Strategy
+## 分支与 Tag 策略
 
-`main` will point to the exact commit that passes the final validation. It will become the default branch before the Release is published. The existing remote feature branch will remain available and will not be force-pushed or deleted.
+`main` 将指向通过最终验证的确切提交，并在 Release 发布前成为默认分支。现有远端 feature 分支将继续保留，不会被强制推送或删除。
 
-The `v1.0.0` tag and GitHub Release will target the verified `main` commit. If a `v1.0.0` tag or Release unexpectedly already exists, execution will stop for inspection rather than overwrite it.
+`v1.0.0` Tag 和 GitHub Release 将指向通过验证的 `main` 提交。如果意外发现 `v1.0.0` Tag 或 Release 已经存在，执行将立即停止并检查现状，而不会覆盖已有内容。
 
-## Verification and Failure Handling
+## 验证与失败处理
 
-Before remote changes, the working tree must be clean and the full release validator must pass. After publication, local Git, the GitHub API, and a clean clone will be checked independently.
+在进行远端变更前，工作区必须保持干净，完整发布验证必须通过。发布后，将分别通过本地 Git、GitHub API 和全新克隆进行独立检查。
 
-If validation fails, no Tag or Release will be created. If a remote step partially succeeds, the completed state will be inspected before any retry; destructive cleanup or history rewriting is outside this closeout.
+如果验证失败，将不会创建 Tag 或 Release。如果某个远端步骤只完成了一部分，任何重试之前都会先检查已经产生的状态；破坏性清理或历史重写不在本次发布收尾范围内。
