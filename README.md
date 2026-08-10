@@ -1,133 +1,133 @@
-# IELTS Task 2 Reviewer
+# IELTS Task 2 写作批改器
 
-[中文说明](README.zh-CN.md)
+[English README](README.en.md)
 
-A reusable Prompt and Codex Skill that reviews one IELTS Writing Task 2 essay, cites exact evidence, and identifies exactly three priorities for the next draft.
+一套可以重复使用的通用 Prompt 和 Codex Skill：批改单篇 IELTS Writing Task 2 作文，引用真实原文证据，并找出下一稿最值得优先解决的三个问题。
 
-Version: `1.0.0`
+版本：`1.0.0`
 
-![Controlled comparison: generic review passed 2 of 11 quality gates; the IELTS Reviewer Skill passed 11 of 11](docs/assets/skill-ab-comparison.svg)
+![同题同文对比：普通批改通过2项质量门槛，IELTS Reviewer Skill通过全部11项](docs/assets/skill-ab-comparison.svg)
 
-*Controlled single-essay comparison: same question, essay, GPT-5.5 model, and an independent blind judge. This `n = 1` result demonstrates the review contract rather than claiming universal scoring accuracy.*
+*单篇受控对比：使用同一道题、同一篇作文、同一个GPT-5.5模型，并由独立会话盲评。`n = 1`，用于展示批改规则带来的稳定性，不代表对所有作文的评分准确率。*
 
-## Why this exists
+## 为什么做这个工具
 
-Generic AI feedback often produces a score, a long error list, and a rewritten essay. That can be difficult to turn into focused practice.
+普通 AI 批改经常给出一个分数、一长串错误和一篇重写范文，但用户看完后不一定知道下一篇具体应该练什么。
 
-This reviewer uses a smaller contract:
+这个批改器采用更聚焦的规则：
 
-1. review all four IELTS Writing criteria;
-2. support judgments with exact words from the essay;
-3. select the three highest-impact problems;
-4. turn those problems into three next-draft checks;
-5. avoid rewriting the full essay.
+1. 检查 IELTS Writing 四项标准；
+2. 每个主要判断都引用作文原文；
+3. 只选择影响最大的三个问题；
+4. 把三个问题转化成下一稿检查项；
+5. 不替用户重写整篇作文。
 
-## What you receive
+## 仓库提供什么
 
-- an English universal Prompt;
-- a Chinese-interface universal Prompt;
-- an installable Codex Skill;
-- an original sample essay and complete review;
-- ten original evaluation cases;
-- public evaluation notes and validation scripts.
+- 英文通用 Prompt；
+- 中文界面的通用 Prompt；
+- 可安装的 Codex Skill；
+- 一篇原创示例作文和完整批改；
+- 十篇原创评测作文；
+- 公开的评测记录和验证脚本。
 
-Unlimited use is included. There is no essay counter, expiry date, online activation, or intentionally weakened trial.
+免费版不限使用次数，没有作文次数限制、到期时间、在线激活或故意降低质量的试用版。
 
-## 60-second start
+## 60秒开始使用
 
-### ChatGPT or another capable AI assistant
+### ChatGPT或其他支持长Prompt的AI工具
 
-Open one of these files:
+打开其中一个文件：
 
-- [English Prompt](prompts/task2-reviewer-en.md)
-- [Chinese-interface Prompt](prompts/task2-reviewer-zh.md)
+- [英文Prompt](prompts/task2-reviewer-en.md)
+- [中文界面Prompt](prompts/task2-reviewer-zh.md)
 
-Copy the entire `Prompt` code block into a new conversation, then paste the complete Task 2 question and essay.
+复制文件中 `Prompt` 代码块的全部内容，再提交完整的Task 2题目和作文。
 
 ### Codex
 
-Clone this repository, then copy the Skill into your user Skill directory:
+克隆仓库后，将Skill复制到个人Skill目录：
 
 ```bash
 mkdir -p "$HOME/.agents/skills"
 cp -R codex-skill/ielts-task2-reviewer "$HOME/.agents/skills/ielts-task2-reviewer"
 ```
 
-Invoke it with:
+调用示例：
 
 ```text
 Use $ielts-task2-reviewer to review this Task 2 question and essay. Explain the feedback in Chinese.
 ```
 
-See the [complete quick start](docs/quick-start.md) for repository-scoped installation and troubleshooting.
+项目级安装和故障处理请查看[完整快速入门](docs/quick-start.zh-CN.md)。
 
-## Example
+## 示例
 
-Input excerpt:
+作文原句：
 
 > Educated people are useful, and every country needs useful people.
 
-Reviewer output:
+批改结果：
 
-> **Problem:** Ideas are relevant but underdeveloped.
+> **Problem:** 观点相关，但发展不足。
 >
-> **Why this is a priority:** The essay gives a valid reason but does not explain the mechanism clearly.
+> **Why this is a priority:** 文章提出了合理方向，却没有解释中间机制。
 >
-> **Next-draft action:** Explain exactly how free university creates social or economic benefits.
+> **Next-draft action:** 具体解释免费大学教育怎样带来社会或经济收益。
 
-Read the [original sample essay](examples/sample-essay.md) and [complete sample review](examples/sample-review.md).
+查看[原创示例作文](examples/sample-essay.md)和[完整批改结果](examples/sample-review.md)。
 
-## Output
+## 完整输出
 
-Every complete review includes:
+每次完整批改包含：
 
-- Submission Check;
-- Training Reference Score Summary;
-- Task Response;
-- Coherence and Cohesion;
-- Lexical Resource;
-- Grammatical Range and Accuracy;
-- Three Priority Problems;
-- Next-Draft Checklist;
-- Scoring Limitation.
+- Submission Check；
+- Training Reference Score Summary；
+- Task Response；
+- Coherence and Cohesion；
+- Lexical Resource；
+- Grammatical Range and Accuracy；
+- Three Priority Problems；
+- Next-Draft Checklist；
+- Scoring Limitation。
 
-All scores are AI-generated training reference scores, not official IELTS scores.
+所有分数均为AI生成的训练参考分，不是官方IELTS成绩。
 
-## Quality and evaluation
+## 质量与评测
 
-The final English and Chinese Prompts were tested against ten original cases covering:
+中英文最终Prompt分别测试了十种原创案例：
 
-- off-topic response;
-- underdeveloped ideas;
-- weak examples;
-- paragraph progression;
-- mechanical cohesion;
-- repetitive vocabulary;
-- collocation errors;
-- frequent grammar errors;
-- simple but clear language;
-- a near-target essay.
+- 偏题；
+- 观点发展不足；
+- 例子不能支持观点；
+- 段落推进混乱；
+- 机械使用连接词；
+- 词汇重复；
+- 搭配错误；
+- 频繁语法错误；
+- 语言简单但表达清楚；
+- 接近目标水平。
 
-The final 20 Prompt outputs were generated without access to the expected diagnoses. They passed automated checks for structure, exact evidence, priority count, disclaimer, and unexpected rewrite headings. Manual review matched the designated primary weakness in 9 of 10 cases for each language and found no full rewritten essay. The Skill also passed fresh-context forward tests on three representative cases.
+最终20份Prompt输出在看不到预期诊断的情况下生成，并通过了结构、精确原文证据、问题数量、免责声明和意外重写标题等自动检查。人工复核中，中英文分别有9/10案例命中预设的主要弱点，且没有出现整篇重写。Skill也在三个代表性案例上完成了全新上下文测试。
 
-Review the [evaluation rubric](evals/evaluation-rubric.md), [machine-readable results](evals/results.json), [Prompt run log](evals/run-log.md), and [Skill forward test](evals/skill-forward-test.md).
+查看[评测标准](evals/evaluation-rubric.md)、[机器可读结果](evals/results.json)、[Prompt运行记录](evals/run-log.md)和[Skill前向测试](evals/skill-forward-test.md)。
 
-## Scoring basis and limitations
+## 评分依据和边界
 
-The review structure is informed by current public IELTS explanations of the four Writing criteria. The project paraphrases those criteria and does not reproduce commercial teaching content or full descriptor tables.
+批改结构参考当前公开的IELTS Writing四项标准说明。项目只使用原创表述，不复制商业教学资料或完整官方评分表。
 
-Sources and limitations are recorded in [Scoring Basis and Limitations](docs/scoring-disclaimer.md).
+来源与限制记录在[评分依据与限制](docs/scoring-disclaimer.zh-CN.md)。
 
-This project is not affiliated with or endorsed by IELTS, the British Council, IDP, or Cambridge University Press & Assessment.
+本项目与IELTS、British Council、IDP和Cambridge University Press & Assessment不存在隶属或官方背书关系。
 
-## Free reviewer versus full system
+## 免费版与完整版
 
-The free reviewer permanently handles single-essay diagnosis. A separate full system is planned for question analysis, error cards, targeted revision, repeated-error tracking, weekly review, and a Notion notebook.
+免费版永久免费处理单篇作文诊断。未来的独立完整版计划增加审题、错题卡、针对性练习、跨作文错误追踪、每周复盘和Notion错题本。
 
-The full system is still in development. See the [transparent feature comparison](docs/full-version.md).
+完整版仍在开发中。查看[透明功能对照](docs/full-version.zh-CN.md)。
 
-## Usage terms
+## 使用条款
 
-This project is available for individual non-commercial study only. You may not resell it, share copies, publicly re-upload it, repackage it, or use it to provide paid essay review, tutoring, or other commercial services.
+本项目仅授权个人非商业使用。禁止转卖、共享、公开再上传、重新打包，或使用本产品提供收费批改、辅导及其他盈利服务。
 
-Read [LICENSE.md](LICENSE.md) before using or adapting the files.
+使用或修改前请阅读[LICENSE.md](LICENSE.md)。

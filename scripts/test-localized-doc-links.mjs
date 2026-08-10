@@ -2,7 +2,7 @@
 
 import { access, readFile } from "node:fs/promises";
 
-const chineseReadme = "README.zh-CN.md";
+const chineseReadme = "README.md";
 const expectedChineseDocs = [
   "docs/quick-start.zh-CN.md",
   "docs/scoring-disclaimer.zh-CN.md",
@@ -37,8 +37,8 @@ for (const target of docLinks) {
 for (const target of expectedChineseDocs) {
   try {
     const document = await readFile(target, "utf8");
-    if (!document.includes("(../README.zh-CN.md)")) {
-      errors.push(`${target} must link back to ../README.zh-CN.md`);
+    if (!document.includes("(../README.md)")) {
+      errors.push(`${target} must link back to ../README.md`);
     }
   } catch {
     errors.push(`Expected Chinese document does not exist: ${target}`);

@@ -10,6 +10,7 @@ fi
 
 required_scaffold="
 README.md
+README.en.md
 README.zh-CN.md
 LICENSE.md
 CHANGELOG.md
@@ -74,32 +75,32 @@ if [ -f VERSION ] && [ "$(tr -d '\r\n' < VERSION)" != "1.0.0" ]; then
   missing=1
 fi
 
-if [ -f README.md ]; then
-  rg -qi "unlimited use" README.md || {
-    echo "README.md must state unlimited use" >&2
+if [ -f README.en.md ]; then
+  rg -qi "unlimited use" README.en.md || {
+    echo "README.en.md must state unlimited use" >&2
     missing=1
   }
-  rg -qi "training reference score" README.md || {
-    echo "README.md must use training reference score wording" >&2
+  rg -qi "training reference score" README.en.md || {
+    echo "README.en.md must use training reference score wording" >&2
     missing=1
   }
-  rg -qi "individual non-commercial" README.md || {
-    echo "README.md must summarize the individual non-commercial license" >&2
+  rg -qi "individual non-commercial" README.en.md || {
+    echo "README.en.md must summarize the individual non-commercial license" >&2
     missing=1
   }
 fi
 
-if [ -f README.zh-CN.md ]; then
-  rg -q "不限使用次数" README.zh-CN.md || {
-    echo "README.zh-CN.md must state unlimited use" >&2
+if [ -f README.md ]; then
+  rg -q "不限使用次数" README.md || {
+    echo "README.md must state unlimited use" >&2
     missing=1
   }
-  rg -q "训练参考分" README.zh-CN.md || {
-    echo "README.zh-CN.md must use training reference score wording" >&2
+  rg -q "训练参考分" README.md || {
+    echo "README.md must use training reference score wording" >&2
     missing=1
   }
-  rg -q "个人非商业使用" README.zh-CN.md || {
-    echo "README.zh-CN.md must summarize the individual non-commercial license" >&2
+  rg -q "个人非商业使用" README.md || {
+    echo "README.md must summarize the individual non-commercial license" >&2
     missing=1
   }
 fi

@@ -1,6 +1,6 @@
 # 评分依据与限制
 
-[返回中文 README](../README.zh-CN.md)
+[返回中文 README](../README.md)
 
 资料检索日期：2026-07-29
 

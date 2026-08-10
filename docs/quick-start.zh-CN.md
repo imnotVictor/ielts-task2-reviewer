@@ -1,6 +1,6 @@
 # 快速入门
 
-[返回中文 README](../README.zh-CN.md)
+[返回中文 README](../README.md)
 
 IELTS Task 2 写作批改器有两种使用方式：
 
