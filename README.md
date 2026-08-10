@@ -6,6 +6,10 @@ A reusable Prompt and Codex Skill that reviews one IELTS Writing Task 2 essay, c
 
 Version: `1.0.0`
 
+![Controlled comparison: generic review passed 2 of 11 quality gates; the IELTS Reviewer Skill passed 11 of 11](docs/assets/skill-ab-comparison.svg)
+
+*Controlled single-essay comparison: same question, essay, GPT-5.5 model, and an independent blind judge. This `n = 1` result demonstrates the review contract rather than claiming universal scoring accuracy.*
+
 ## Why this exists
 
 Generic AI feedback often produces a score, a long error list, and a rewritten essay. That can be difficult to turn into focused practice.
